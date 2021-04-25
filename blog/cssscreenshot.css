@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
+
+
+* {
+    font-family: Quicksand;
+    background-color:aliceblue;
+    margin-left: 50px;
+    box-sizing: border-box;
+
+}
+
+
+
+
+#foot {
+    height: 200px;
+    background-color: black;
+
+}
+
+
+
+.family-1 {
+    color: red;
+}
+
+.family-2 {
+    color: blue;
+}
+
+
+
+
+
+.margin {
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
+
+.red {
+    color: red;
+}
+
+#blue {
+    color: blue;
+}
+

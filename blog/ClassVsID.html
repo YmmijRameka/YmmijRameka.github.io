@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Class vs ID</title>
+        <meta name="description" content="I explain the best practises for using classes and id's">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="../main.css" />
+        
+
+    </head>
+    <body>
+        <header class="main-header">
+            <div id="top-div">
+            
+                <img src="../images/blog-logo.jpg" id="logo">
+                
+            <h1 class="top-title">My Blog</h1>
+            </div>
+            
+            <nav class="nav" id="main-nav">
+                <ul>
+                    <li><a href="file:///C:/Users/windows/Desktop/workspace/YmmijRameka.github.io/About/aboutme.html">About</a></li>
+                    <li><a href="file:///C:/Users/windows/Desktop/workspace/YmmijRameka.github.io/index.html">Home</a></li>
+                    <li><a href="file:///C:/Users/windows/Desktop/workspace/YmmijRameka.github.io/blog/blogs.html">Blogs</a></li>
+                </ul>
+            </nav>
+        </header>   
+       
+        
+        <div style="overflow:hidden; height:100%;" class="blog-1-page">
+        
+            
+        <section class="classvsid-text">  
+          
+            <h1 class="classid">Classes vs id</h1>
+
+            <p>we give our code classes and id's in HTML so we can style them in CSS</p>
+            <p> just like we have names, elements can have names that we give to them called ID's. </p>
+
+            <p class="title-top-white">ID in HTML:<span class="span1 title-top-white">ID in css:</span></p>       
+
+
+            <img src="../images/2021-04-23 (3).png"><img src="../images/2021-04-23 (4).png" id="footcsspic">
+
+            <p class="margin-520 title-top-white">(id's use "#" before them in CSS)</p>
+                
+            <p>And just like we have families, elements can be put into a family 
+                using classes.</p>
+
+            <img src="../images/2021-04-23 (2).png">
+            <p class="title-top-white">(classes use "#" before them in CSS)</p>    
+
+            <p>For example - If you want to make multiple paragraphs red, you will assign them to the same class (or family)</p>
+
+            <p class="title-top-white">Class in HTML: <span style="margin-left:100px;" class="title-top-white">Class in CSS:</span></p>
+
+            <img src="../images/2021-04-23 (10).png"> <img src="../images/2021-04-23 (5).png"> 
+            
+            <p class="title-top-white">What it looks like on a webpage:</p>
+
+            <img src="../images/2021-04-23 (7).png"> 
+
+            <p>ID's are little different, They can only be used for one element on a page.</p>
+
+            <p>For this reason, they should really only be used for things like footers, headers, and menu's that appear once on the page.</p>
+
+            <p> Classes can be used multiple times to style multiple elements. You should use classes for things like paragraphs, links & buttons.</p>
+
+            <p class="title-top-white"> Sometimes elements can have both a class and an ID:</p>
+
+            <img src="../images/2021-04-23 (13).png">
+
+            <p>It's important to note that when you have two classes, the ID will always override the class.</p>
+
+            <p>For example, if an element has a class that is assigned a red color, and an ID that is assigned a blue color, the text will end up being blue instead of red.</p>
+            
+            <img src="../images/class red  id blue.png" ><span class="result-sign" > = </span><img src="../images/2021-04-23 (19).png" id="something-img">
+
+          
+           <p class="title-top-white">Why would want to want to use both classes together?</p>
+           <p> id can seperate an object from its family so it has for instance, the same colour and size as its family, but it is round instead of square.</p>
+           <p>The id makes it round. but the class makes it the same size and colour as its family. </p> 
+
+           <p class="title-top-white">In summary here are the basic rules to remember when using classes & I.D's:</p>
+           <ul>
+               <li>Use Id's for elements that appear only once on the page (eg; footer)</li>
+               <li>Use classes for things that might appear more than once (eg; paragraphs)</li>
+           </ul>
+          
+           <p>It's important to follow these practises because your code may not end up looking right in other browsers.</p> 
+           
+           
+           
+           
+
+
+
+
+
+
+           
+            
+        </section>
+
+        </div>
+
+
+
+        <!--section>
+            <p class="link-text"> Do you feel like watching youtube? Don't worry i got u - <a href="https://www.youtube.com/">click here to go there</a></p>
+        </section-->
+        
+     
+
+  
+                
+        <!-- section>
+
+
+                <p>This took forever to make</p>
+                <p>feast ur eyes on these pictures and checkout my website, none of the buttons work sorry, cya</p>
+           
+        
+            <img src="images/Screenshot_2021-04-10-12-43-55-667_com.discord.jpg">
+            <img src="images/gurl.jpg">
+            <img src="images/06007421-YG200_default_0010_8b11c9b5-2f26-448d-b9af-1327daca7f92.jpg">
+
+        </section-->
+
+
+        <footer>
+            <h3 class="footer-text">you are at <span style="color:rgb(24, 138, 72)">the end</span> of</h3>
+            <h2 class="foot-header">My Blog</h2>
+
+            <!--ul>
+                <li><img src="images/"></li>
+                <li><img src="images/"></li>
+                <li><img src="image/path"></li>
+            </ul-->
+
+        </footer>
+    
+
+
+
+    </body>
+</html>
