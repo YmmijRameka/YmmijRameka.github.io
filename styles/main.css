@@ -40,7 +40,7 @@ html, body {
 
 .main-header {
  
-    background-image: url("images/header-5.jpg");
+    background-image: url("../images/header-5.jpg");
     background-size: cover;
     padding-top: 20px;
 
