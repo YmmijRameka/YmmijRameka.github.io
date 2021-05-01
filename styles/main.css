@@ -192,8 +192,33 @@ footer {
     color: pink;
 }
 
+.purple-abd {
+    color: #341d5c;
+}
+
+.back-abd-blue {
+    background-color: #89CFF0;
+    border-radius: 25px;
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 50px;
+    padding-left: 40px;
+    width: 550px;
+    height: 100px;
+}
+.back-abd-purple {
+    background-color: #9d7fc4;
+    border-radius: 25px;
+    padding-top: 15px;
+    padding-right: 10px;
+    padding-bottom: 50px;
+    padding-left: 60px;
+    width: 300px;
+    height: 80px;
+}
+
 .white-h3 {
-    color: #89cff0;
+    color: aliceblue;
 }
 
 .default-text {
@@ -207,5 +232,39 @@ footer {
     font-size: 1.5em;
     margin-right: 300px;
     margin-left: 100px;
+}
+
+.roundbox-EQ {
+    border-radius: 25px;
+    
+    background-image: linear-gradient(to right, rgba(252, 191, 59, 0.822) , rgba(255, 106, 7, 0.692));
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 50px;
+    padding-left: 40px;
+    width: 920px;
+    height: 100px;
+}
+
+#roundbox-smaller {
+    width: 620px;
+}
+
+.box-text-EQ {
+    color:rgb(54, 54, 54);
+    font-size: 0.8em;
+}
+
+.javadom-text {
+    margin-left: 50px;
+    margin-right: 200px;
+}
+
+.coloured-tags {
+    color: #187bcd;
+}
+
+.resize-dom {
+    width: 500px;
 }
 

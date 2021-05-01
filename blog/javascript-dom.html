@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Java DOMDOM</title>
+        <meta name="description" content="insert description">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="../styles/main.css" />
+        
+
+    </head>
+    <body>
+        <header class="main-header">
+            <div id="top-div">
+            
+                <img src="../images/blog-logo.jpg" id="logo">
+                
+            <h1 class="top-title">My Blog</h1>
+            </div>
+            
+            <nav class="nav" id="main-nav">
+                <ul>
+                    <li><a href="https://YmmijRameka.github.io/about/aboutme">About</a></li>
+                    <li><a href="https://ymmijrameka.github.io/">Home</a></li>
+                    <li><a href="https://YmmijRameka.github.io/blog/blogs">Blogs</a></li>
+                </ul>
+            </nav>
+        </header>   
+       
+        
+        <div style="overflow:hidden; height:100%;" class="blog-1-page">
+        
+            
+        <section class="classvsid-text">
+            <div class="background-abd">
+            <h1 class="back-abd-blue">The Javascript DOM</h1>
+            </div>
+            <h3 class="title-top-white">The differences between HTML and CSS</h3>
+            <p class="javadom-text">
+                Html and css are different in many ways. When building a website you want to start with the html. You write all your text and add all your images in the html file, then when you are ready, you create a css file and you link it to the html, then you can style everything individually.<br>
+                <br>
+                For example, if you want to change the colour of the text that you created in html, using css you can do just that.  Without css, the html will be very ugly but it will still be functional. You cannot create functional content in css so you need the html for the css to live.  It’s kind of like a symbiotic relationship. 
+                <br><br>
+                <span class="pink-h4">In case you didn’t get any of that, here's an analogy to describe them further:</span>
+                <br>
+                HTML is like a body, it has no clothes but it has hair and eyes and hands that all work, but the problem is this body looks homeless without clothes and no one wants to talk to or even look at them because they are naked. So when this person decides they wanna look cool and get some clothes (the clothes are css), then they can be happy and everyone will want to talk to them because they look cool.
+                <br>
+                Moral of the story: HTML is a naked website (it looks so ugly). CSS adds pretty to your site so people will enjoy coming to it.  
+            </p>
+ 
+            
+            <h4 class="purple-abd back-abd-purple">The DOM : </h4>
+            <h4><span class="pink-h4">D</span>ocument = your html document
+            <br>
+            <span class="pink-h4">O</span>bject = Anything you put into the html ( all the tags - <span class="coloured-tags">&lt;html&gt;</span>, <span class="coloured-tags">&lt;head&gt;</span>, <span class="coloured-tags">&lt;img&gt;</span>,etc)
+            <br>
+            <span class="pink-h4">M</span>odel = how you layout all your objects (tags) in your document
+            <br>
+            </h4>
+
+            <p class="javadom-text">
+                For an html you usually put the <span class="coloured-tags">&lt;html&gt;</span> tag first, then inside of the html tag, you might put the <span class="coloured-tags">&lt;head&gt;</span> and <span class="coloured-tags">&lt;body&gt;</span> tag. 
+                <br>
+                <img src="../images/hmtl headbody.png">
+                <br>
+   
+                <p class="title-top-white">In a DOM (document object model) It would look like this:
+                <br>
+                <img src="../images/html-dom-tree-cut.png" class="resize-dom">
+                <br>
+                If we wanted to add a title inside the head tag which said something like "my blog", the dom would now look like this:
+                <br>
+                <img src="../images/html-dom-tree-second-cut.png" class="resize-dom">
+                <br> 
+                <span style="margin-left:100px"class="pink-h4">(the text = "my blog")</span>
+                <br>
+                <br>
+                And if we wanted to add a paragraph inside the body tag which said something like “happy boi”, the dom tree would now look like this:
+                <br>
+                <img src="../images/html-dom-tree-uncut.png" class="resize-dom">
+                </p>
+
+                
+                <span class="pink-h4">Why do we actually need the DOM?</span>
+                Knowing the dom is especially useful in javascript. Using the DOM we can manipulate and edit elements on our page. In order to edit 
+                & manipulate them, we must be able to navigate the DOM in order to find them first. You can also use the console.log function to get info about your page using the DOM.
+             
+            </p>
+
+            <p class="javadom-text">
+                <h3 class="title-top-white">Functions</h3>
+                A function is a command we use in javascript when we want the webpage to perform a certain task or to make a calculation.  
+                They are executed either when a button is clicked, when the code tells it to start, or automatically started by itself.  
+                Functions are necessary because with them we can perform tedious tasks like writing multiple lines of code, without actually writing multiple lines of code. This results in the code being more tidy and easy to analyze, which is especially important when working with others. 
+                <br>
+                <h3 class="title-top-white">Accessing data from Arrays vs Objects.</h3>
+                <span class="pink-h4">Arrays</span> can contain multiple values of random things. When you want to access specific data within the array you can use the index number to help you.
+                <br>
+                <span class="pink-h4">Objects</span> consist of data that is familiar to us. An object could be a person or a thing, and just like in real life, that person or object would have properties that make it what it is. Objects contain 2 types of data: fields and methods. If our object was a person, the fields would contain data about the person's height, age, ethnicity, and things that let us know about it. The methods would contain things that this person can do like running, eating, breathing, etc. When you want to access specific data within an object you just need to use the objects name in order to find it. 
+                <br>
+                <h3 class="title-top-white">Control Flow and Loops</h3>
+                When we want a task executed, Java will use Control Flow - it will go through the code in order from the first to the last line. Using loops we can control the default flow so that instead of it going in order from top to bottom, it can repeat the task, or we can change it to go in a different order when something doesn't go right.
+                Say if you’re wanting to get to your friends house, you would:
+                Get in the car, put on seatbelt & drive to friends house
+                And bam you're there. But wait! what if you don’t have enough petrol in your car to get there or it suddenly breaks down? 
+                Well the computer is like a baby, it doesn't know what to do in this situation because it's never been told. So in order to tell it what to do you need to use a loop. 
+                <br>
+                <span class="pink-h4">If fuel is low</span> > <span style="color:#79b321">Go to petrol station</span>
+            </p>
+
+
+
+
+        </section>
+
+        </div>
+
+
+
+
+        <footer>
+            <h3 class="footer-text">you are at <span style="color:rgb(24, 138, 72)">the end</span> of</h3>
+            <h2 class="foot-header">My Blog</h2>
+
+            <!--ul>
+                <li><img src="images/"></li>
+                <li><img src="images/"></li>
+                <li><img src="image/path"></li>
+            </ul-->
+
+        </footer>
+    
+
+
+
+    </body>
+</html>
