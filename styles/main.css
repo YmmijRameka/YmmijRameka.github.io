@@ -7,23 +7,35 @@
     color: rgb(110, 110, 110);
 }
 
-:root {
-    /*dont need root to put variables, can put them in html tag*/
-}
+
 
 html {
+
     --maxWidth: 500px; 
 }
 html, body {
     margin: 0;
     padding: 0;
-    background-image: url("../images/header-5.jpg");
+    background-image: url("../images/try6.png");
     background-size: cover;
+    background-attachment: fixed;
+   
+    
+    background-repeat: no-repeat;
    
 }
 
+a:link {color:ALICEBLUE;}      /* unvisited link */
+a:visited {color:ALICEBLUE;}  /* visited link */
+a:hover {color: PINK;}  /* mouse over link */
+a:active {color:ALICEBLUE;}  /* selected link */
+
+
 .nav ul {
-    margin: 0;
+    margin: 0px;
+    border-top: 1px solid transparent;
+    padding: 0; /* very important gets rid of default space from nav.*/
+  
  
 }
 
@@ -32,30 +44,108 @@ html, body {
     
 }
 
-#home-button {
+
+
+.homezoid {
+ 
     display: inline-block;
-    margin-top: 10px;
+    margin-top: 20px;
     border-bottom: 65px solid black;
 	border-left: 40px solid transparent;
 	border-right: 40px solid transparent;
-	height: 30px;
+	height: 0px;
 	width: 300px;
+    position: relative;
+  
 
+}
+
+.homezoid span {
+    position: absolute;
+    top: 20px;
+    left: 35%;
+    color:aliceblue;
+}
+
+.aboutzoid {
+    display: inline-block;
+    margin-top: 20px;
+    border-bottom: 65px solid black;
+	border-left: 40px solid transparent;
+	border-right: 40px solid transparent;
+	height: 0px;
+	width: 300px;
+    position: relative;
+    
+
+}
+
+.aboutzoid span {
+    position: absolute;
+    top: 20px;
+    left: 35%;
+    color:aliceblue;
+
+}
+
+
+
+.blogzoid {
+    display: inline-block;
+    margin-top: 20px;
+    border-bottom: 65px solid ALICEBLUE;
+	border-left: 40px solid transparent;
+	border-right: 40px solid transparent;
+	height: 0px;
+	width: 300px;
+    position: relative;
+
+}
+
+.blogzoid span {
+    position: absolute;
+    top: 20px;
+    left: 35%;
+    color:#2f303a;
+
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: -10px;
+    left: 0;
+    width: 100%;
+    height: 10px;
+    box-shadow: 0px 0 10px rgba(0, 0, 0, 0.8);
+    z-index: 100;
+  }
+
+.no-show {
+    border-bottom: 65px solid black;
+    opacity: 0.5;
 }
 
 .nav a {
-    display: inline-block;
-
-
+    margin-top: 10px;
+    display: inline;
     color:aliceblue;
     text-decoration: none;
+
+
 }
 
 #main-nav {
+    margin-right: auto;    
+    margin-left: auto;    
+    max-width: 100%;    
+    min-width: 1000px;
     text-align: center;
-    font-size: 2.1em;
-    border-top: 1px solid white
+    font-size: 1.5em;
+
 }
+
+
 
 #main-nav li {
     padding: 0 5%;
@@ -63,67 +153,78 @@ html, body {
 }
 
 .main-header {
- 
-    /*background-image: url("../images/header-5.jpg");
-    background-size: cover;*/
-    padding-top: 20px;
+    margin-top: 10px;
+    background-size: cover;
+    background-repeat:no-repeat;
 
 }
 
 
+
 #top-div {
-    height: 200px;
+    height: 180px;
+    padding: 0px;
 }
 
 #logo {
     
-    border: 4px solid aliceblue;
-    border-radius: 50%;
-    margin-top: 30px;
-    margin-left: 50px;
+   /* border: 3px solid aliceblue;
+    border-radius: 50%; */
+  
+        display: block;
+
     margin-right: auto;
-    width: 140px;
+    margin-left: auto;
+  
+    width: 240px;
     
 }
 
-.top-title {
+#blog-name {
     
     display: inline;
     margin-left: 20px;
-    font-size: 3em;
+ 
+    
+    font-size: 2em;
     color: aliceblue;
-    vertical-align: 30;
+    vertical-align: 30px;
 
 }
 
 
 #yessir-img {
-    float: left;
     width: 50%;
-    margin: 60px 50px 70px 70px;
+    margin-right: 80px;
+    vertical-align: middle;
 }
 
+/* top right bottom left */
+
+
 #yessir-text {
-    float: right;
-    margin-right: 150px;
-    margin-top: 250px;
-    margin-bottom: 200px;
+ 
+    margin-right: 10px;
+    
+    font-size: 1.5em;
+    font-weight: bolder;
+
     
 }
 
 #jordans-img {
     float:right;
-    width: 40%;
-    margin: 0px 50px 70px 70px;
+    width: 47%;
+    margin: 50px 0px 0px 70px;
+    vertical-align: middle;
 
 }
 
 
 #jordans-text {
-    float: left;
-    margin: 150px 100px 40px 360px;
-    text-align: center;
-  
+
+text-align: center;
+margin-top: 190px;
 }
 
 
@@ -132,9 +233,15 @@ html, body {
 }
 
 .blog-articles {
-    max-width: 1400px;
-    margin: 0 auto;
+    margin: auto;
+    margin-bottom: 50px;
     border: 1px solid none;
+    margin-right: auto; /* 1 */
+    margin-left:  auto; /* 1 */
+    min-width: 1000px;
+    max-width: 1200px; /* 2 */
+    padding-right: 10px; /* 3 */
+    padding-left:  10px; /* 3 */
 }
 
 
@@ -142,47 +249,79 @@ html, body {
 .container {
 
     background-color: black;
-    background-size: cover;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
+    background-size: content;
+    border-radius: 10px;
+    padding: 50px;
+    
  
 }
+
+
+
+#blog-wrapper {
+    width: 960px;
+    background-color: #2f303a;
+    border-radius: 10px;
+    padding: 50px;
+}
+
+.blogs-container {
+    background-color: rgba(0, 0, 0, 0.5)
+    background-size: content;
+    border-radius: 10px;
+    padding: 70px;
+    padding-right: 500px;
+    PADDING-BOTTOM: 20px;
+
+}
+
 
 
 
 
 footer {
     height: 200px;
-    background-color: rgb(134, 70, 139);
+    background-color: black; /*for browsers that dont support gradients*/
+    opacity: 0.5;
     overflow: hidden;
-    color: black;
     text-align: center;
-    font-family: open sans;
+    margin: auto;
+    vertical-align: middle; 
+    padding-top: 50px; 
+   
+   
+
+ 
+}
+
+.foot-header {
+    color: white;
+
+    
 }
 
 .footer-text {
     margin-top: 50px;
+    color: black;
 }
 
-.blog-list-page {
-    background-color: pink;
-    background-size: cover;
-}
 
 #blog-list-title {
-    color: black;
-    margin-top: 50px;
+    color: aliceblue;
+   
 
 }
 
 .blog-list-text {
-    margin-left: 50px;
+ font-size: 1em;
+ color: aliceblue;
 }
 
 .blog-1-page {
     background-color: rgb(54, 54, 54);
     
 }
+
 
 .classvsid-text {
     font-size: 2em;
@@ -192,8 +331,12 @@ footer {
 
 }
 
-.bloglinks {
-    font-size: 2em;
+#bloglinks {
+    font-size: 1em;
+    list-style-type: none;
+    color: aliceblue;
+    margin: 0;
+    padding: 0;
 }
 
 .span1 {
@@ -223,6 +366,8 @@ footer {
 #something-img {
     vertical-align: 50%;
 }
+
+
 
 
 .pink-h4 {
@@ -308,3 +453,4 @@ footer {
 .h3-sizing {
     font-size: 22pt;
 }
+
